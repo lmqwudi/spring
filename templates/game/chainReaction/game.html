@@ -50,20 +50,20 @@
 	<div class="game-canvas">
     <canvas id="game_canvas" width="800" height="500">抱歉，您的浏览器不支持 HTML 5 Canvas 标签，请使用 IE9 / Chrome / Opera 火狐等浏览器浏览本页以获得最佳效果。</canvas>
 	</div>
-    <script type="text/javascript" src="static/js/Consts.js"></script>
-    <script type="text/javascript" src="static/js/Steps.js"></script>
-    <script type="text/javascript" src="static/js/StepsLib.js"></script>
-    <script type="text/javascript" src="static/js/Circle.js"></script>
-    <script type="text/javascript" src="static/js/lib/CR_Math.js"></script>
-    <script type="text/javascript" src="static/js/CircleLib.js"></script>
-    <script type="text/javascript" src="static/js/MouseEventDispatch.js"></script>
-    <script type="text/javascript" src="static/js/MouseMgr.js"></script>
-    <script type="text/javascript" src="static/js/ObjectMgr.js"></script>
-    <script type="text/javascript" src="static/js/lib/Color.js"></script>
-    <script type="text/javascript" src="static/js/lib/ColorOp.js"></script>
-    <script type="text/javascript" src="static/js/lib/ColorOp1.js"></script>
-    <script type="text/javascript" src="static/js/lib/Util.js"></script>
-    <script type="text/javascript" src="static/js/Main.js"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/Consts.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/Steps.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/StepsLib.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/Circle.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/lib/CR_Math.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/CircleLib.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/MouseEventDispatch.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/MouseMgr.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/ObjectMgr.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/lib/Color.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/lib/ColorOp.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/lib/ColorOp1.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/lib/Util.js') }}"></script>
+    <script type="text/javascript" src="{{ prefix }} {{ static_url('js/chain/Main.js') }}"></script>
 
     <script type="text/javascript">
         window.onload = function () {
