@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Pragma" content="no-cache"/>
+        <meta http-equiv="Cache-Control" content="no-cache"/>
+        <meta http-equiv="Expires" content="Thu, 01 Jan 1970 00:00:01 GMT"/>
+        <meta http-equiv="Expires" content="0"/>
+        <title></title>
+        <style type="text/css">
+			 body {
+                font: 13.34px helvetica,arial,freesans,clean,sans-serif;
+                background-color: black;
+				text-align: center;
+            }
+			
+			.game-canvas {
+				width:800px; 
+				height:500px;
+				border: 1px solid #006699;
+				/*position: absolute;
+				margin-left: -400px;
+				margin-top: -250px;
+				top: 50%;
+				left: 50%;*/
+				display: block;
+				z-index: 1000;
+			}
+			
+			#level {
+				position: absolute;
+				margin-left: -400px;
+				margin-top: -250px;
+				top: 50%;
+				left: 50%;
+				display: block;
+				z-index:2000;
+			}
+			
+			#try_again {
+				margin:0 auto;
+			}
+        </style>
+    </head>
+
+    <body>
+	<div class="level">
+		Level 1
+	</div>
+	<div class="game-canvas">
+    <canvas id="game_canvas" width="800" height="500">抱歉，您的浏览器不支持 HTML 5 Canvas 标签，请使用 IE9 / Chrome / Opera 火狐等浏览器浏览本页以获得最佳效果。</canvas>
+	</div>
+    <script type="text/javascript" src="static/js/Consts.js"></script>
+    <script type="text/javascript" src="static/js/Steps.js"></script>
+    <script type="text/javascript" src="static/js/StepsLib.js"></script>
+    <script type="text/javascript" src="static/js/Circle.js"></script>
+    <script type="text/javascript" src="static/js/lib/CR_Math.js"></script>
+    <script type="text/javascript" src="static/js/CircleLib.js"></script>
+    <script type="text/javascript" src="static/js/MouseEventDispatch.js"></script>
+    <script type="text/javascript" src="static/js/MouseMgr.js"></script>
+    <script type="text/javascript" src="static/js/ObjectMgr.js"></script>
+    <script type="text/javascript" src="static/js/lib/Color.js"></script>
+    <script type="text/javascript" src="static/js/lib/ColorOp.js"></script>
+    <script type="text/javascript" src="static/js/lib/ColorOp1.js"></script>
+    <script type="text/javascript" src="static/js/lib/Util.js"></script>
+    <script type="text/javascript" src="static/js/Main.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            _Main.init();
+        };
+    </script>
+    <button id="try_again">try again</button>
+	
+</body>
+</html>
