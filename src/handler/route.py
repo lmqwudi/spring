@@ -3,6 +3,7 @@
 from handler import (
     index,
     game,
+    blog,
 )
 
 
@@ -17,6 +18,12 @@ game_handlers = [
     (r'/game/chainReaction', game.ChainHandler),
 ]
 
+blog_handlers = [
+    (r'/blog', blog.IndexHandler),
+    (r'/blog/first', blog.FirstHandler),
+]
+
 handlers = (
     index_handlers + game_handlers
+    + blog_handlers
 )
