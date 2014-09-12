@@ -4,6 +4,7 @@ from handler import (
     index,
     game,
     blog,
+    read,
 )
 
 
@@ -23,7 +24,11 @@ blog_handlers = [
     (r'/blog/first', blog.FirstHandler),
 ]
 
+read_handlers = [
+    (r'/read', read.IndexHandler),
+]
+
 handlers = (
     index_handlers + game_handlers
-    + blog_handlers
+    + blog_handlers + read_handlers
 )
