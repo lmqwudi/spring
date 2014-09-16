@@ -23,6 +23,7 @@ game_handlers = [
 blog_handlers = [
     (r'/blog', blog.IndexHandler),
     (r'/blog/first', blog.FirstHandler),
+    (r'/blog/al_1', blog.Al1Handler),
 ]
 
 read_handlers = [

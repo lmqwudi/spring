@@ -18,3 +18,11 @@ class FirstHandler(tornado.web.RequestHandler):
             'blog/first.html',
             prefix=PREFIX
         )
+       
+
+class Al1Handler(tornado.web.RequestHandler):
+    def get(self):
+        self.render(
+            'blog/al_1.html',
+            prefix=PREFIX
+        )
