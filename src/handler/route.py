@@ -5,7 +5,8 @@ from handler import (
     game,
     blog,
     read,
-    program
+    program,
+    about,
 )
 
 
@@ -22,8 +23,8 @@ game_handlers = [
 
 blog_handlers = [
     (r'/blog', blog.IndexHandler),
-    (r'/blog/first', blog.FirstHandler),
-    (r'/blog/al_1', blog.Al1Handler),
+    (r'/blog/01', blog.OneHandler),
+    (r'/blog/02', blog.TwoHandler),
 ]
 
 read_handlers = [
@@ -34,8 +35,12 @@ program_handlers = [
     (r'/program', program.IndexHandler),
 ]
 
+about_handlers = [
+    (r'/about', about.IndexHandler),
+]
+
 handlers = (
     index_handlers + game_handlers
     + blog_handlers + read_handlers
-    + program_handlers
+    + program_handlers + about_handlers
 )

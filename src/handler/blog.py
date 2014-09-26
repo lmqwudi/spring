@@ -12,17 +12,17 @@ class IndexHandler(tornado.web.RequestHandler):
         )
 
 
-class FirstHandler(tornado.web.RequestHandler):
+class OneHandler(tornado.web.RequestHandler):
     def get(self):
         self.render(
-            'blog/first.html',
+            'blog/1.html',
             prefix=PREFIX
         )
-       
 
-class Al1Handler(tornado.web.RequestHandler):
+
+class TwoHandler(tornado.web.RequestHandler):
     def get(self):
         self.render(
-            'blog/al_1.html',
+            'blog/2.html',
             prefix=PREFIX
         )
