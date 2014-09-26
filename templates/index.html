@@ -1,59 +1,47 @@
 {% extends "base.html" %}
-
-
 {% block middle_body %}
-<div id="blog">
-    <section class="clearfix">
-        <div class="g2">
-            <h3>
-                博客 
-            </h3>
-            <ul class="no-list work">
-                <li>
-                    <h5>
-                        <a href="/blog/first">开篇</a>
-                    </h5><span class="label label-info">2014-09-12</span>
-                    <p>
-                        懒惰了这么久，终于下定决心写点东西来记录一下自己的学习，生活什么的。
-                        坚持下去才是胜利...
-                    </p>
-                </li>
-                <li>
-                    <h5>
-                        <a href="/blog/al_1">算法1</a>
-                    </h5><span class="label label-info">2014-09-12</span>
-                    <p>
-                        算法开篇...
-                    </p>
-                </li>
+<article>
+    <div class="banner">
+    <ul class="texts">
+        <p>The best life is use of willing attitude, a happy-go-lucky life. </p>
+        <p>最好的生活是用心甘情愿的态度，过随遇而安的生活。</p>
+    </ul>
+    </div>
+    <div class="bloglist">
+        <h2>
+            <p><span>博客</span></p>
+        </h2>
+
+        <div class="blogs">
+            <h3><a href="/blog/first">开篇</a></h3>
+            <figure>
+                <img src="{{ prefix }}{{ static_url('images/01.jpg') }}" >
+            </figure>
+            <p>懒惰了这么久，终于下定决心写点东西来记录一下自己的学习，生活什么的。 坚持下去才是胜利...</p>
+            <ul>
+                <a href="/" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
             </ul>
+            <p class="autor">
+                <span>作者：spring</span>
+                <span>分类：生活日记</span><span>
+            </p>
+            <div class="dateview">2014-09-28</div>
         </div>
-        <div class="g1">
-            <div class="sidebar">
-                <h3>
-                    技能 
-                </h3>
-                <h5>
-                    Programming Language
-                </h5>
-                <div class="meter emerald">
-                    <span style="width: 50%"><span>HTML/CSS</span></span>
-                </div>
-                <div class="meter carrot">
-                    <span style="width: 50%"><span>MySql</span></span>
-                </div>
-                <div class="meter wisteria">
-                    <span style="width: 50%"><span>jQuery/JavaScript</span></span>
-                </div>
-                <div class="meter sunflower">
-                    <span style="width: 50%"><span>java</span></span>
-                </div>
-                <div class="meter asbestos">
-                    <span style="width: 50%"><span>Python</span></span>
-                </div>
-            </div>
+
+        <div class="blogs">
+            <h3><a href="/blog/first">排序算法</a></h3>
+            <figure><img src="images/01.jpg" ></figure>
+            <p>懒惰了这么久，终于下定决心写点东西来记录一下自己的学习，生活什么的。 坚持下去才是胜利...</p>
+            <ul>
+                <a href="/" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+            </ul>
+            <p class="autor">
+                <span>作者：spring</span>
+                <span>分类：生活日记</span><span>
+            </p>
+            <div class="dateview">2014-09-28</div>
         </div>
-    </section>
-</div>
-    
-{% end %}
+
+    </div>
+    </article>
+    {% end %}    
