@@ -7,6 +7,7 @@ from handler import (
     read,
     program,
     about,
+    life,
 )
 
 
@@ -39,8 +40,13 @@ about_handlers = [
     (r'/about', about.IndexHandler),
 ]
 
+life_handlers = [
+    (r'/life', life.IndexHandler),
+]
+
 handlers = (
     index_handlers + game_handlers
     + blog_handlers + read_handlers
     + program_handlers + about_handlers
+    + life_handlers
 )

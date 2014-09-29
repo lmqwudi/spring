@@ -7,6 +7,6 @@ from conf.config import PREFIX
 class IndexHandler(tornado.web.RequestHandler):
     def get(self):
         self.render(
-            'life/one.html',
+            'life/index.html',
             prefix=PREFIX
         )

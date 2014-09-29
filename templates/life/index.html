@@ -1,0 +1,29 @@
+{% extends "../base.html" %}
+{% block middle_body %}
+<head>
+    <link href="{{ prefix }}{{ static_url('css/about.css') }}" rel="stylesheet">
+</head>
+<article>
+    <h3 class="about_h">您现在的位置是：<a href="/index">首页</a>><a href="/life">慢生活</a></h3>
+    <div class="about">
+        <h2>about life</h2>
+
+        <div class="bloglist">
+            <div class="blogs">
+                <h3>
+                    <a href="/life/01">新起点</a>
+                </h3>
+                <figure>
+                <img src="{{ prefix }}{{ static_url('images/02.jpg') }}">
+                </figure>
+                <p>新起点，新生活，动起来</p>
+                <ul>
+                <a href="/life/01" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+                </ul>
+            <div class="dateview">2014-09-29</div>
+            </div>
+        </div>
+    </div>
+  </article>
+  
+{% end %}    
